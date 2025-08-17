@@ -1,0 +1,29 @@
+goos: windows
+goarch: amd64
+pkg: github.com/capytaine/capytaine/go-capytaine/green_functions
+cpu: 12th Gen Intel(R) Core(TM) i5-12450HX
+BenchmarkBaseGreenFunction_InitMatrices-12           	   30738	     42912 ns/op	  327815 B/op	       4 allocs/op
+BenchmarkBaseGreenFunction_GetColocationPoints-12    	236994154	         5.137 ns/op	       0 B/op	       0 allocs/op
+BenchmarkNewDelhommeau-12                            	  463374	      2814 ns/op	    1705 B/op	      34 allocs/op
+BenchmarkDelhommeau_Evaluate_Small-12                	 8042275	       139.5 ns/op	     256 B/op	       4 allocs/op
+BenchmarkDelhommeau_Evaluate_Medium-12               	   91411	     14030 ns/op	   82049 B/op	       4 allocs/op
+BenchmarkFinGreen3D_SetWaveNumber-12                 	 2302501	       512.5 ns/op	     496 B/op	       5 allocs/op
+BenchmarkFinGreen3D_ComputeGreenFunction3D-12        	  404678	      2592 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFinGreen3D_Evaluate-12                      	 1610124	       776.0 ns/op	     752 B/op	       9 allocs/op
+BenchmarkFinGreen3D_InfiniteVsFiniteDepth/InfiniteDepth-12         	40520553	        29.82 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFinGreen3D_InfiniteVsFiniteDepth/FiniteDepth-12           	  455578	      2877 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHAMS_Evaluate-12                                          	 3804240	       272.7 ns/op	     256 B/op	       4 allocs/op
+BenchmarkHAMS_vs_LiangWuNoblesse/HAMS-12                           	  221295	      5379 ns/op	   13184 B/op	       4 allocs/op
+BenchmarkHAMS_vs_LiangWuNoblesse/LiangWuNoblesse-12                	  204144	      5251 ns/op	   13184 B/op	       4 allocs/op
+BenchmarkIntegration_SmallProblem-12                               	 4566745	       309.6 ns/op	     256 B/op	       4 allocs/op
+BenchmarkIntegration_MediumProblem-12                              	  215865	      4942 ns/op	   13184 B/op	       4 allocs/op
+BenchmarkIntegration_MethodComparison/Delhommeau-12                	 3043524	       370.4 ns/op	     416 B/op	       4 allocs/op
+BenchmarkIntegration_MethodComparison/LiangWuNoblesse-12           	 3391135	       351.2 ns/op	     416 B/op	       4 allocs/op
+BenchmarkIntegration_MethodComparison/HAMS-12                      	 3661708	       435.1 ns/op	     416 B/op	       4 allocs/op
+BenchmarkLiangWuNoblesseGF_Evaluate-12                             	 3433011	       378.4 ns/op	     256 B/op	       4 allocs/op
+BenchmarkComputeDistance-12                                        	1000000000	         0.6447 ns/op	       0 B/op	       0 allocs/op
+BenchmarkRankineSource-12                                          	1000000000	         0.7281 ns/op	       0 B/op	       0 allocs/op
+BenchmarkComputeWaveNumber_FiniteDepth-12                          	17853026	        66.54 ns/op	       0 B/op	       0 allocs/op
+BenchmarkTabulationCache_Interpolate-12                            	136542351	         9.120 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/capytaine/capytaine/go-capytaine/green_functions	35.195s
